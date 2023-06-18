@@ -1,13 +1,13 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* Title */
-#title{
-    text-align: center;
-    margin-top: 4%;
+#title {
+  text-align: center;
+  margin-top: 4%;
 }
 /* Main Container */
 .container {
@@ -20,83 +20,90 @@ body{
   display: flex;
 }
 /* Player & Computer Side */
-.side{
-    width: 50%;
-    height: 100%;
+.side {
+  width: 50%;
+  height: 100%;
 }
 /* Player Side */
 .rock-container {
-    width: 100%;
-    height: 30%;
-    margin-top: 18%;
+  width: 100%;
+  height: 30%;
+  margin-top: 18%;
 }
 /* Choice Boxes */
 .choice {
-    width: 30%;
-    height: 90%;
-    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.66);
-    border-radius: 16px;
+  width: 30%;
+  height: 90%;
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.66);
+  border-radius: 16px;
+  cursor: pointer;
 }
 .rock {
-    margin: auto;
+  margin: auto;
 }
 .paper-scissor-container {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5%;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
 }
-.choice>img{
-    display: block;
-    margin: auto;
-    width: 90%;
+/* For All Images */
+img {
+  display: block;
+  margin: auto;
+  width: 90%;
 }
 
 /* Divider */
-.divider{
-    border: 1px solid black;
+.divider {
+  border: 1px solid black;
 }
 /* Result Display Box */
-.displayResult{
-   width: 15%;
-   height: 15%;
-    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.66);
-    position: absolute;
-    left: 42.5%;
-    background-color: aliceblue;
-    display: none;
-}
-.displayResult>h1{
-    font-size: 45px;
-    text-align: center;
-}
+.displayResult {
+  width: 15%;
+  height: 9%;
+  border-radius: 16px;
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.66);
+  position: absolute;
+  margin-top: 0px;
+  left: 42.5%;
+  background-color: aliceblue;
+  display: none;
+  text-align: center;
+  font-size: 50px;
 
+}
 /* Computer side */
-.computer{
-    display: grid;
-    place-items: center;    
+.computer {
+  display: grid;
+  place-items: center;
 }
 /* Coputer Choice Box */
-.computer-choice{
-    height: 30%;
-    width: 32%;
-    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.66);
-    border-radius: 16px;
+.computer-choice {
+  height: 30%;
+  width: 32%;
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.66);
+  border-radius: 16px;
 }
 /* Next Round Button */
-.button{
-    display: grid;
-    place-items: center;
-    margin-top: 15px;
+.button {
+  display: grid;
+  place-items: center;
+  margin-top: 15px;
 }
-.nextRound{
-    background-color: lightcoral;
-    color: #fff;
-    cursor: pointer;
-    height: 60px;
-    width: 10%;
-    font-size: 25px;
-    padding: 5px;
-    border-radius: 16px;
+.nextRound {
+  background-color: #080826;
+  color: #fff;
+  cursor: pointer;
+  height: 60px;
+  width: 10%;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 16px;
 }
+.nextRound:hover{
+    background-color: transparent;
+    color: #080826;
+    border: 5px double #080826;
+} 

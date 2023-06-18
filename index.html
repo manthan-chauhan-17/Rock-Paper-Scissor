@@ -12,22 +12,22 @@
     <!-- Main Container -->
     <div class="container">
         <!-- Display Result -->
-        <div class="displayResult"><h1></h1></div>
+        <h1 class="displayResult" id="displayResult"></h1>
 
         <!-- Player Side -->
         <div class="side player">
             <!-- Choice Rock -->
             <div class="rock-container">
-                <div class="choice rock">
+                <div class="choice rock" id="rock">
                     <img src="/pics/rock.png" alt="rock">
                 </div>
             </div>
             <!-- Choice Paper Scissor -->
             <div class="paper-scissor-container">
-                <div class="choice">
+                <div class="choice" id="paper">
                     <img src="/pics/paper.png" alt="paper">
                 </div>
-                <div class="choice">
+                <div class="choice" id="scissor">
                     <img src="/pics/scissors.png" alt="scissor">
                 </div>
             </div>
@@ -38,12 +38,14 @@
 
         <!-- Computer Side -->
         <div class="side computer">
-            <div class="computer-choice"></div>
+            <div class="computer-choice" id="compResult">
+                <img src="" alt="">
+            </div>
         </div>
     </div>
     <!-- Next Round Button -->
     <div class="button">
-        <button class="nextRound">Next Round</button>
+        <button class="nextRound" id="nextRound">Next Round</button>
     </div>
 
     <script src="index.js"></script>
